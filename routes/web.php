@@ -25,3 +25,5 @@ Route::namespace('admin')->prefix('admin')->name('admin.')->group(function(){
     Route::resource('/users', 'UserController')->except(['show', 'create', 'store']);
 });
 
+Route::resource('/dashboard', 'DashboardController')->middleware('can:access-dashboard');
+

@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\Role;
 
-class RoleTableSeeds extends Seeder
+class RolesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,7 +12,7 @@ class RoleTableSeeds extends Seeder
      */
     public function run()
     {
-        Role::trancate();
+        Role::truncate();
         Role::create(['name' => 'admin']);
         Role::create(['name' => 'author']);
         Role::create(['name' => 'user']);
