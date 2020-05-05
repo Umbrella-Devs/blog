@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Blog</title>
+        <title>Blog Dashboard</title>
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <link rel="stylesheet" href="{{ asset('css/desktop.css') }}">
         <link rel="stylesheet" href="{{ asset('css/mobile.css') }}">

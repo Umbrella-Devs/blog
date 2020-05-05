@@ -1,10 +1,10 @@
 @extends('layouts.master')
 @section('content')
-    <div class="w-90 mx-auto py-5 mt-3">
-        <div class="text-center">
+    <div class="w-90 mx-auto py-3">
+        <div class="text-center py-3">
             <h1 class="text-3xl">List Of All Users</h1>
         </div>
-        <div class="bg-white mt-5 ">
+        <div class="bg-white mt-">
             <table class="table table-hover">
                 <thead class="thead-dark">
                   <tr>

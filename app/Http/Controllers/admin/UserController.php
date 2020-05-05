@@ -5,9 +5,13 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\User;
+use App\Role;
 
 class UserController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -27,9 +31,13 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    public function edit($id)
+    public function edit(User $user)
     {
-        //
+        $roles = Role::all();
+        return view('users.edit')->with([
+            'user' => $user,
+            'roles' => $roles,
+            ]);
     }
 
     /**

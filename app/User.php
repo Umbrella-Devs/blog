@@ -50,7 +50,7 @@ class User extends Authenticatable
     }
 
     public function HasRole($role){
-        if($this->roles()->whereIn('name', $role)->first()){
+        if($this->roles()->whereIn('name', $roleb)->first()){
             return true;
         }
         return false;
